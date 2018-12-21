@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Bisque"
+    tools:context="com.example.acer.reddoorzz.Login">
+
+    <TextView
+    android:id="@+id/txt_lg"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="L O G I N"
+        android:layout_margin="20dp"
+    android:layout_centerHorizontal="true"
+    android:textColor="@color/colorPrimary"
+    android:textStyle="bold"
+    android:textSize="20sp"/>
+    <LinearLayout
+        android:layout_below="@+id/txt_lg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:layout_margin="40dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:text="Username"
+            android:textSize="18sp" />
+        <EditText
+            android:id="@+id/userLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:hint="Input Username"
+            android:inputType="textEmailAddress" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:text="Password"
+            android:textSize="18sp" />
+        <EditText
+            android:id="@+id/PasswordLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:hint="Input Password"
+            android:inputType="textPassword" />
+
+        <Button
+            android:id="@+id/buttonLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="login" />
+    </LinearLayout>
+</RelativeLayout>

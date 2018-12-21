@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Bisque">
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_above="@+id/bt_createakun"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="55dp"
+        android:src="@drawable/logo2" />
+    <Button
+        android:id="@+id/bt_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/hitam"
+        android:textColor="@color/merah"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+        android:text="login" />
+
+    <Button
+        android:id="@+id/bt_createakun"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/bt_login"
+        android:layout_alignStart="@+id/bt_login"
+        android:layout_below="@+id/bt_login"
+        android:layout_marginTop="36dp"
+        android:background="@color/merah"
+        android:text="buat akun"
+        android:textColor="@color/hitam" />
+</RelativeLayout>

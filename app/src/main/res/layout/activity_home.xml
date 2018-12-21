@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Bisque"
+    tools:context="com.example.acer.reddoorzz.Home">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/logo2" />
+
+    <Button
+        android:id="@+id/bt_datepicker"
+        android:text="Check In"
+        android:background="@color/hitam"
+        android:textStyle="bold"
+        android:textColor="@color/merah"
+        android:layout_width="100dp"
+        android:layout_below="@id/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:text="@string/checkin"
+        android:textSize="20sp"
+        android:textColor="@color/hitam"
+        android:layout_marginBottom="30dp"
+        android:id="@+id/tv_dateresult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bt_datepicker"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <Button
+        android:id="@+id/bt_datepicker2"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/bt_datepicker"
+        android:layout_alignStart="@+id/bt_datepicker"
+        android:layout_alignTop="@+id/tv_dateresult"
+        android:layout_marginTop="43dp"
+        android:background="@color/hitam"
+        android:text="Check Out"
+        android:textColor="@color/merah"
+        android:textStyle="bold" />
+
+    <TextView
+        android:text="Check Out : "
+        android:textSize="20sp"
+        android:textColor="@color/hitam"
+        android:layout_marginBottom="30dp"
+        android:id="@+id/tv_dateresult2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bt_datepicker2"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <Button
+        android:id="@+id/next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_keluar"
+        android:layout_alignEnd="@+id/tv_dateresult"
+        android:layout_alignRight="@+id/tv_dateresult"
+        android:layout_marginBottom="13dp"
+        android:background="@color/hitam"
+        android:text="next"
+        android:textColor="@color/merah"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/btn_keluar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/tv_dateresult"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/tv_dateresult"
+        android:layout_marginBottom="34dp"
+        android:background="@color/hitam"
+        android:text="LOG OUT"
+        android:textColor="@color/merah"
+        android:textStyle="bold" />
+
+</RelativeLayout>

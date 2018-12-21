@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Bisque"
+    tools:context="com.example.acer.reddoorzz.Fasilitas">
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:src="@drawable/logo2"
+        android:id="@+id/logo"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="- Fasilitas -"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="@color/hitam"
+        android:layout_below="@id/logo"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/tittle"
+        />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/ic_wifi_black_24dp"
+        android:layout_below="@+id/tittle"
+        android:layout_marginLeft="65dp"
+        android:id="@+id/wifi"
+        android:layout_marginTop="40dp"
+        />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/ic_tv_black_24dp"
+        android:layout_below="@+id/tittle"
+        android:layout_toRightOf="@id/wifi"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="40dp"
+        android:id="@+id/tv"
+        />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/ic_wc_black_24dp"
+        android:layout_below="@+id/wifi"
+        android:layout_marginLeft="65dp"
+        android:layout_marginTop="50dp"
+        android:id="@+id/toilet"
+        />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/ic_ac_unit_black_24dp"
+        android:layout_below="@+id/tv"
+        android:layout_toRightOf="@id/wifi"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="50dp"
+        android:id="@+id/ac"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BACK"
+        android:layout_below="@id/ac"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:background="@color/hitam"
+        android:textColor="@color/merah"
+        android:id="@+id/btn_back"
+        />
+
+</RelativeLayout>

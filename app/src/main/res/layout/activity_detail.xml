@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Bisque"
+    tools:context="com.example.acer.reddoorzz.Detail">
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:src="@drawable/logo2"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/logo"
+        />
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/gambar3"
+        android:layout_below="@id/logo"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/gambar"
+        />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Fasilitas"
+        android:layout_below="@id/gambar"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="20dp"
+        android:textStyle="bold"
+        android:background="@color/hitam"
+        android:textColor="@color/merah"
+        android:id="@+id/btn_fasilitas"
+        />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Lokasi"
+        android:layout_below="@id/gambar"
+        android:layout_toRightOf="@id/btn_fasilitas"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="20dp"
+        android:textStyle="bold"
+        android:background="@color/hitam"
+        android:textColor="@color/merah"
+        android:id="@+id/btn_lokasi"
+        />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Foto"
+        android:layout_below="@id/gambar"
+        android:layout_toRightOf="@id/btn_lokasi"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="20dp"
+        android:textStyle="bold"
+        android:background="@color/hitam"
+        android:textColor="@color/merah"
+        android:id="@+id/btn_foto"
+        />
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Lanjut"
+        android:layout_below="@id/btn_lokasi"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="20dp"
+        android:textStyle="bold"
+        android:background="@color/hitam"
+        android:textColor="@color/merah"
+        android:id="@+id/btn_lanjut"
+        />
+
+</RelativeLayout>

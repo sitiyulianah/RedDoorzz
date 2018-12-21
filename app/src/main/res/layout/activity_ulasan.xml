@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Bisque"
+    tools:context="com.example.acer.reddoorzz.Ulasan">
+
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:src="@drawable/logo2"
+        android:id="@+id/logo"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="Nama"
+        android:textColor="@color/hitam"
+        android:textSize="20sp"
+        android:layout_below="@id/logo"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/txt_nama"
+        />
+
+    <EditText
+        android:id="@+id/edit_nama"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/txt_alamat"
+        android:layout_alignEnd="@+id/edit_kamar"
+        android:layout_alignRight="@+id/edit_kamar"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Alamat"
+        android:textColor="@color/hitam"
+        android:textSize="20sp"
+        android:layout_below="@id/txt_nama"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/txt_alamat"
+        />
+
+    <EditText
+        android:id="@+id/edit_alamat"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edit_nama"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="-3dp"
+        android:layout_toRightOf="@id/txt_tamu"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jumlah Tamu"
+        android:textColor="@color/hitam"
+        android:textSize="20sp"
+        android:layout_below="@id/txt_alamat"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/txt_tamu"
+        />
+
+    <EditText
+        android:id="@+id/edit_tamu"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edit_alamat"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="-3dp"
+        android:layout_toRightOf="@id/txt_tamu"
+        android:inputType="number"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jumlah Kamar"
+        android:textColor="@color/hitam"
+        android:textSize="20sp"
+        android:layout_below="@id/txt_tamu"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/txt_kamar"
+        />
+
+    <EditText
+        android:id="@+id/edit_kamar"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edit_tamu"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="7dp"
+        android:inputType="number"
+        android:layout_toRightOf="@id/txt_kamar"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/txt_jm_masuk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit_kamar"
+        android:layout_marginTop="30dp"
+        android:layout_toEndOf="@+id/txt_tamu"
+        android:layout_toRightOf="@+id/txt_tamu"
+        android:text="Jam Masuk"
+        android:textColor="@color/hitam"
+        android:textSize="20sp" />
+
+
+    <TextView
+        android:id="@+id/txt_jm_keluar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_next"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="17dp"
+        android:text="Jam Keluar"
+        android:textColor="@color/hitam"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="28dp"
+        android:background="@color/hitam"
+        android:text="NEXT"
+        android:textColor="@color/merah"
+        android:textStyle="bold" />
+
+</RelativeLayout>
